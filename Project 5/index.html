@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(./img/image6.jpg);         
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            padding: 15px;
+            border: 2px solid skyblue;
+            border-radius: 5px;
+            background-color: aliceblue;
+        }
+        input {
+            margin: 5px 5px;
+            height: 35px;
+            padding: 7px;
+            border: 1px solid gray;
+        }
+        button {
+            height: 35px;
+            margin: 10px 20px;
+            background-color: skyblue;
+            border-radius: 5px;
+            color: #333;
+        }
+        button:hover {
+            background-color: #333;
+            color: skyblue;    
+        }
+        .box {
+            direction: rtl;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input class="box" type="text" placeholder="نام">
+        <input class="box" type="email" placeholder="ایمیل">
+        <input class="box" type="password" placeholder="رمز عبور">
+        <button>ورود</button>
+    </div>
+</body>
+</html>

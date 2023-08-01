@@ -1,0 +1,211 @@
+                         /* با علامت ستاره که به صورت زیر نوشته شده می توان هر تعقییری را
+                         .برای همه المان ها به صورت یک جا اعمال کرد */
+ * {
+    padding: 0;          /* هیچ گونه فاصله گذاری داخلی پیش فرضی اعمال نشود */     
+    margin: 0;           /* هیچ گونه فاصله گذاری بیرونی پیش فرضی اعمال نشود */
+    box-sizing: border-box;   /*برای فیکس کردن کادر ها داخل باکس به کار می رود */
+    border: 0;
+ }
+/*** بخش تایتل ***/
+title {
+    color: aqua;
+}
+/*** بدنه سایت ***/
+body {
+   direction: rtl;     /* (rtl : Right to Left).متن هایی که می خواهم بنویسم را از راست به چب می گذارد */
+}
+ /*** Heading Site ***/
+.top h1 {
+    color: rgb(0, 26, 255);
+    background-color:grey;
+    text-align: center;
+    opacity: 50%;
+    width: 100%;            
+    height: 50px;                
+    font-size: 30px;
+    margin-top: 20px;
+}
+/* Style Menu */
+.menu {
+    float: right;
+    width: 100%;
+    background-color: #c7ecee;
+}
+.menu li {
+    float: right;
+    list-style: none;       /* برای برداشتن دایره جلوی توشته */
+}
+.menu li a {
+    padding: 10px 35px;
+    display: inline-block;       /* هم بلاک لول هم اینلاین لول است */
+    text-decoration: none;       /* برای برداشتن خط زیر نوشته */
+    color:darkmagenta;
+    font-weight: bold;           /* تو پر کردن منو */
+}
+/* حالت تعقییر رنگ منو وقتی ماوس روش قرار گرفت */
+.menu li a:hover {
+    background: #ffbe76;
+}
+/*** کادر یا باکس اول ***/
+.box {
+    background-color:rgb(100, 100, 150);
+    width: 100%;             
+    float: right;           
+    text-align: right;       
+ /* margin: 20px 350px ;    برای فاصله دادن از بیرون به همه طرف استفاده می شود،اولین عدد ارتفاع و 
+    .دومی فاصله از عرض وسومین عدد فاصله از پایین و چهارمین عدد فاصله از بالا است */
+     padding-bottom: 20px;
+     margin-top: 20px;
+     
+ /*  margin-bottom: 1000px;
+     margin-left: 350px;
+     margin-right: 350px;              .این چهار خط کد برای فاصله گزاری از طرفین به صورت جدا گانه است */  
+     
+ /* padding: 20px 350px;    مثل مارجین عمل می کند ولی برای فاصله داخلی از همه طرف استفاده می شود */      
+}
+/*** باکس سمت راست ***/
+.box .right {
+    background-color:rgb(150, 150, 150);
+    width: 45%;
+    float: right;           /* برای قرارگیری کادر به جهت دل خواه */
+    margin-top: 18px;
+    margin-right: 20px;
+    padding: 20px 10px;
+}
+/*** هدینگ داخل باکس سمت راست ***/
+.right h2 {
+    color: aliceblue;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
+/*** متن داخل باکس سمت راست ***/
+.right p {
+    color: aliceblue;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 20px;    /* برای تنظیم ارتفاع خط ها */
+    text-shadow: 10px 10px 10px black;         /* برای سایه دادن به متن */
+}
+/*** نام نویسنده داخل باکس سمت راست ***/
+.right span {
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*** لینک سایت داخل باکس سمت راست ***/
+.right a {
+    font-size: 15px;
+    text-decoration: none;    /* برای حذف کردن خط زیر متن لینک یا آدرس سایت */
+}
+/*** باکس سمت چت ***/
+.box .left {
+    background-color:rgb(150, 150, 150);
+    width: 45%;
+    float: left;
+    margin-top: 18px;
+    margin-left: 20px;
+    padding: 20px;
+    
+}
+/*** تصویر داخل باکس سمت چپ ***/
+.left img {
+    max-width: 100%;      /* می توان عرض تصویر را به اندازه کادر زیرش یکسان کرد */
+    border: 5px double;
+    border-radius: 10px;
+    
+    
+}
+.left img :hover {
+    opacity: 0.5 ;
+}
+/*** باکس دوم ***/
+.main {
+    width: 100%;
+    background-color: rgb(187, 187, 197);
+    margin-top: 20px; 
+    float: right;        /* برای قرارگیری کادر به جهت دل خواه */
+    border: 1px solid black;
+}
+.main .myform {
+    float: right;           /* برای قرارگیری کادر به جهت دل خواه */
+    padding: 20px
+}
+/*** مشخصات (نام ، ایمیل و پسوورد) ***/
+.myform input[type="text"] , .myform input[type="email"] , .myform input[type="Password"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;         /* برای بوردر دادن با ضخامت و رنگ دلخواه */
+    border-right: 4px dashed purple;     /* برای خط بوردر فقط سمت راست */
+}
+/*** برچسب کل فرم مشخصات ***/
+.myform label {
+    margin-top: 10px;
+    display: block;
+    font-size: 18px;
+}
+/*** برچسب مهارت ها ***/
+.mharat label {
+    color: black;
+}
+/*** برچسب مهارت ها ***/
+.mharat label{
+    margin-top: 20px;
+    display: inline;
+}
+/*** مدرک تحصیلی ***/
+.myform select {
+    width: 100%;
+    padding: 12px;
+}
+/*** قسمت توضیحات فرم ***/
+.myform textarea {
+    margin-top: 10px;
+    font-size:large;  
+}
+/*** دکمه ارسال ***/
+.myform input[type="submit"] , .myform button  {
+    color: aliceblue;
+    background-color: green;
+    padding: 8px 25px;
+    cursor: pointer ;     /* برای تعقییر نشانگر ماوس وقتی رو دکمه قرار می گیرد */
+    border-radius: 10px;         /* برای گرد کردن گوشه های بوردر دکمه */
+    border-top-left-radius: 0px;      /* گردی بالا سمت چپ دکمه صفر */
+}
+/* برای تعقییر شکل دکمه وقتی که ماوس روش قرار می گیرد */
+.myform input [type="submit"]:hover , .myform button:hover {
+    background: #30336b;
+}
+/* دکمه بازگشت */
+.myform button {
+    margin-right: 10px;
+    background-color: brown;
+}
+.pedar {
+    float: left;
+    width: 45%;
+    background-color: aqua;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    box-shadow: 10px 10px 10px gray;    /*برای سایه دادن به باکس به کار می رود */
+}
+.pedar .farzand {
+    width: 70px;
+    height: 70px;
+    background-color: orangered;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    box-shadow: 10px 10px 10px gray;
+    z-index: 10;     /* مثلا برای قرار گیری کادر یا باکس زیرین روی باکس رو است */
+}
+.pedar .farzand2 {
+    width: 70px;
+    height: 70px;
+    background-color:chartreuse;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    overflow: hidden;     /*برای پنهان کردن هر چیزی */
+}
